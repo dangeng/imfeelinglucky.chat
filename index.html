@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Chatbot</title>
     <meta name="description" content="Randomly redirects you to one of Claude, ChatGPT, or Gemini.">
+
+    <!-- Google tag (gtag.js) -->
+    <!-- 
+        I think there's a chance the redirect happens before 
+        the analytics is finished, but I want to prioritize
+        redirect speed over accurate tracking...
+    -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EB7GGXF2CY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-EB7GGXF2CY');
+    </script>
+
     <script>
         function randomRedirect() {
             const sites = [
