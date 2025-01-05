@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Redirect</title>
+    <script>
+        function randomRedirect() {
+            return
+            const sites = [
+                "https://chatgpt.com/",
+                "https://claude.ai/",
+                "https://gemini.google.com/"
+            ];
+            const randomSite = sites[Math.floor(Math.random() * sites.length)];
+            window.location.href = randomSite;
+        }
+    </script>
+</head>
+<body onload="randomRedirect()">
+    <p>Redirecting you to a random LLM...</p>
+    <p>If this is not working, please close your eyes and choose one of these links</p>
+    <a href="https://claude.ai/">chatbot 1</a>
+    <a href="https://chatgpt.com/">chatbot 2</a>
+    <a href="https://gemini.google.com/">chatbot 3</a>
+</body>
+</html>
